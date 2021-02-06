@@ -6,9 +6,9 @@ from pyhocon import ConfigFactory
 from typing import Any, Dict  # noqa: F401
 
 from whale.extractor.snowflake_metadata_extractor import SnowflakeMetadataExtractor
-from databuilder.extractor.sql_alchemy_extractor import SQLAlchemyExtractor
 from whale.models.table_metadata import TableMetadata, ColumnMetadata
 
+from databuilder.extractor.sql_alchemy_extractor import SQLAlchemyExtractor
 
 class TestSnowflakeMetadataExtractor(unittest.TestCase):
     def setUp(self):

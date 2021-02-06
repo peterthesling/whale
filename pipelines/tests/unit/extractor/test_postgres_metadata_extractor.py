@@ -5,9 +5,10 @@ from typing import Any, Dict
 from mock import MagicMock, patch
 from pyhocon import ConfigFactory
 
-from databuilder.extractor.postgres_metadata_extractor import PostgresMetadataExtractor
 from databuilder.extractor.sql_alchemy_extractor import SQLAlchemyExtractor
-from databuilder.models.table_metadata import ColumnMetadata, TableMetadata
+
+from whale.extractor.postgres_metadata_extractor import PostgresMetadataExtractor
+from whale.models.table_metadata import ColumnMetadata, TableMetadata
 
 
 class TestPostgresMetadataExtractor(unittest.TestCase):
